@@ -30,7 +30,7 @@ export default function Home() {
               </li>
               <li>
                 <a className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8" 
-                  href="#">
+                  href="/Paramont_Hernandez_CV.pdf">
                     {isEnglish ? 'Resume' : 'Currículum'}
                 </a>
               </li>
@@ -82,7 +82,7 @@ export default function Home() {
             <Image src={faceImage} fill alt="" style={{objectFit:"cover"}}/>
           </div>
         </section>
-
+        
       </main>
     </div>
   )
