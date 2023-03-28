@@ -6,7 +6,10 @@ import {
 } from "react-icons/ai";
 import 'flag-icon-css/css/flag-icons.min.css';
 import Image from "next/image";
-import faceImage from "../public/paramont_image.png";
+import image_face from "../public/images/paramont_image.png";
+import image_rankingApp from "../public/images/rankingApp.png";
+import image_grind75 from "../public/images/grind75.png";
+import image_pokemonAPI from "../public/images/pokemon_table.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -79,11 +82,62 @@ export default function Home() {
             </a>
           </div>
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-            <Image src={faceImage} fill alt="" style={{objectFit:"cover"}}/>
+            <Image src={image_face} fill alt="" style={{objectFit:"cover"}}/>
+          </div>
+
+          <div className="text-center mt-20 mb-5">
+            <h3 className="text-3xl py-1 dark:text-white ">
+              {isEnglish ?
+                "Some of my projects" :
+                "Algunos de mis proyectos"
+              }
+            </h3>
+          </div>
+
+          <div className="container mx-auto justify-center">
+
+            <a href="https://github.com/ParamontHdzGlz/RankingApp" className="block">
+              <div className="box text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+                <Image src={image_rankingApp} alt="" height={150} className="mx-auto" />
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-400">
+                  Ranking App
+                </h3>
+                <p className="py-2 dark:text-gray-400">
+                  Web application using ASP.NET Core and React to create interactive UI for ranking images.
+                </p>
+                <h4 className="pt-4 text-teal-600">#React.js #ASP.NET #javascript #HTML #CSS #C#</h4>
+              </div>
+            </a>
+
+            <a href="https://github.com/ParamontHdzGlz/Grind75" className="block">
+              <div className="box text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+                <Image src={image_grind75} alt="" height={150} className="mx-auto" />
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-400">
+                  Grind75 problems
+                </h3>
+                <p className="py-2 dark:text-gray-400">
+                  Competitive programing challenges from Gind75 solved.
+                </p><br/>
+                <h4 className="pt-4 text-teal-600">#CompetitivePrograming #ProblemSolving #Algorithms #DataStrcutures</h4>
+              </div>
+            </a>
+            <a href="https://github.com/ParamontHdzGlz/Grind75" className="block">
+              <div className="box text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+                <Image src={image_pokemonAPI} alt="" height={150} className="mx-auto" />
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-400">
+                  Pokemon API
+                </h3>
+                <p className="py-2 dark:text-gray-400">
+                  REST API for getting pokemon information using ASP.NET Core, Entity Framework Core and Sqlite.
+                </p><br/>
+                <h4 className="pt-4 text-teal-600">#ASP.NET #C# #EFCore #Sqlite</h4>
+              </div>
+            </a>
+
           </div>
         </section>
-        
       </main>
+      <br/>
     </div>
   )
 }
