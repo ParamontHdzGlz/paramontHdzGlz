@@ -12,7 +12,7 @@ import image_face from "../public/images/paramont_image.png";
 import image_rankingApp from "../public/images/rankingApp.png";
 import image_grind75 from "../public/images/grind75.png";
 import image_pokemonAPI from "../public/images/pokemon_table.png";
-import image_reactivities from "../public/images/Reactivities.png";
+import image_reactivities from "../public/images/reactivities.png";
 import image_diplomadoCdD from "../public/images/diplomadoCdD.png";
 import image_clasificadorVoz from "../public/images/espectrogramaVoz.png";
 import image_pieShop from "../public/images/pieShop.png";
@@ -221,7 +221,21 @@ export default function Home() {
               </div>
             </a>
 
-
+            <a href="https://github.com/ParamontHdzGlz/pokeAPI" className="block">
+              <div className="box text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+                <Image src={image_pokemonAPI} alt="" height={150} className="mx-auto" />
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-400">
+                  Pokemon API
+                </h3>
+                <p className="py-2 dark:text-gray-400">
+                {isEnglish ?
+                    "REST API for getting pokemon information using ASP.NET Core, Entity Framework Core and Sqlite." :
+                    "API REST para obtener información de pokemones. Usandp ASP.NET Core, Entity Framework COre y Slito."
+                  }
+                </p><br/>
+                <h4 className="pt-4 text-teal-600">#ASP.NET #C# #EFCore #Sqlite</h4>
+              </div>
+            </a>
 
           </div>
         </section>
