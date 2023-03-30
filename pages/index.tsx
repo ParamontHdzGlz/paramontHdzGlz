@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
@@ -6,11 +7,17 @@ import {
 } from "react-icons/ai";
 import 'flag-icon-css/css/flag-icons.min.css';
 import Image from "next/image";
+
 import image_face from "../public/images/paramont_image.png";
 import image_rankingApp from "../public/images/rankingApp.png";
 import image_grind75 from "../public/images/grind75.png";
 import image_pokemonAPI from "../public/images/pokemon_table.png";
-import { useState } from "react";
+import image_reactivities from "../public/images/Reactivities.png";
+import image_diplomadoCdD from "../public/images/diplomadoCdD.png";
+import image_clasificadorVoz from "../public/images/espectrogramaVoz.png";
+import image_pieShop from "../public/images/pieShop.png";
+import image_courseLib from "../public/images/courseLibrary.png";
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -96,6 +103,38 @@ export default function Home() {
 
           <div className="container mx-auto justify-center">
 
+          <a href="https://github.com/ParamontHdzGlz/Reactivities" className="block">
+              <div className="box text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+                <Image src={image_reactivities} alt="" height={150} className="mx-auto" />
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-400">
+                  Reactivities (in process)
+                </h3>
+                <p className="py-2 dark:text-gray-400">
+                  {isEnglish ?
+                    "Social network mockup-up implementing clean architecture with mediator pattern. Using ASP.NET and React.js." :
+                    "Borrador para una red social que implementa clean architecture y el patrón de mediador. Usando ASP.NET y React.js."
+                  }
+                </p>
+                <h4 className="pt-4 text-teal-600">#CleanArchitecture #mediator pattern #React.js #ASP.NET</h4>
+              </div>
+            </a>
+
+            <a href="https://github.com/ParamontHdzGlz/BethanysPieShop" className="block">
+              <div className="box text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+                <Image src={image_pieShop} alt="" height={150} className="mx-auto" />
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-400">
+                  Bethany's Pie Shop
+                </h3>
+                <p className="py-2 dark:text-gray-400">
+                  {isEnglish ?
+                    "Marketplace for a pie shop. Using ASP.NET Core with view support and .NET's Razor Pages." :
+                    "Marketplace para una tienda de pays. Usando ASP.NET Core con soporte para views de Razor Pages."
+                  }
+                </p>
+                <h4 className="pt-4 text-teal-600">#ASP.NET #Views #RazorPages #C# #MVC</h4>
+              </div>
+            </a>
+
             <a href="https://github.com/ParamontHdzGlz/RankingApp" className="block">
               <div className="box text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
                 <Image src={image_rankingApp} alt="" height={150} className="mx-auto" />
@@ -103,9 +142,28 @@ export default function Home() {
                   Ranking App
                 </h3>
                 <p className="py-2 dark:text-gray-400">
-                  Web application using ASP.NET Core and React to create interactive UI for ranking images.
+                  {isEnglish ?
+                    "Web application using ASP.NET Core and React.js to create interactive UI for ranking images." :
+                    "Aplicación web que usa ASP.NET Core y React.js para crear una UI interactiva para clasificar imágenes."
+                  }
                 </p>
                 <h4 className="pt-4 text-teal-600">#React.js #ASP.NET #javascript #HTML #CSS #C#</h4>
+              </div>
+            </a>
+
+            <a href="https://github.com/ParamontHdzGlz/CourseLibrary" className="block">
+              <div className="box text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+                <Image src={image_courseLib} alt="" height={150} className="mx-auto" />
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-400">
+                  Course Library
+                </h3>
+                <p className="py-2 dark:text-gray-400">
+                  {isEnglish ?
+                    "ASP.NET API project, going deeper into RESTful." :
+                    "Projecto de API de ASP.NET, profundizando en REST."
+                  }
+                </p>
+                <h4 className="pt-4 text-teal-600">#REST #ASP.NET #API #C# </h4>
               </div>
             </a>
 
@@ -116,19 +174,64 @@ export default function Home() {
                   Grind75 problems
                 </h3>
                 <p className="py-2 dark:text-gray-400">
-                  Competitive programing challenges from Gind75 solved.
-                </p><br/>
+                  {isEnglish ?
+                    "Competitive programing challenges from Gind75 solved." :
+                    "Problemas resueltos de programación comptetitiva de Grind75."
+                  }
+                </p><br />
                 <h4 className="pt-4 text-teal-600">#CompetitivePrograming #ProblemSolving #Algorithms #DataStrcutures</h4>
               </div>
             </a>
-            <a href="https://github.com/ParamontHdzGlz/Grind75" className="block">
+
+            <a href="https://github.com/ParamontHdzGlz/Diplomado-CienciaDeDatos-Modulo1" className="block">
+              <div className="box text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+                <Image src={image_diplomadoCdD} alt="" height={150} className="mx-auto" />
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-400">
+                  {isEnglish ?
+                    "Data Science Diploma" :
+                    "Diplomado de Ciencia de Datos"
+                  }
+                </h3>
+                <p className="py-2 dark:text-gray-400">
+                  {isEnglish ?
+                    "Activities from the Data Science diploma I took, taught by the UNAM." :
+                    "Actividades realizadas para el diplomado de ciencia de datos impartido por la UNAM."
+                  }
+                </p>
+                <h4 className="pt-4 text-teal-600">#CienciaDeDatos #python #Pandas #Plotly #Scikit-learn #Keras #TensorFlow</h4>
+              </div>
+            </a>
+
+            <a href="https://github.com/ParamontHdzGlz/Diplomado-CienciaDeDatos-Modulo4/blob/main/proyecto/proyecto-hernandez-gonzalez-paramont.ipynb" className="block">
+              <div className="box text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
+                <Image src={image_clasificadorVoz} alt="" height={150} className="mx-auto" />
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-400">
+                  {isEnglish ?
+                    "Voice classifier" :
+                    "Clasificador de voz"
+                  }
+                </h3>
+                <p className="py-2 dark:text-gray-400">
+                  {isEnglish ?
+                    "Voice file classifier depending on sex." :
+                    "Clasificador archivos de voz por sexo."
+                  }
+                </p>
+                <h4 className="pt-4 text-teal-600">#python #Pandas #Numpy #Keras #Espectrograma</h4>
+              </div>
+            </a>
+
+            <a href="https://github.com/ParamontHdzGlz/pokeAPI" className="block">
               <div className="box text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 flex-1">
                 <Image src={image_pokemonAPI} alt="" height={150} className="mx-auto" />
                 <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-400">
                   Pokemon API
                 </h3>
                 <p className="py-2 dark:text-gray-400">
-                  REST API for getting pokemon information using ASP.NET Core, Entity Framework Core and Sqlite.
+                {isEnglish ?
+                    "REST API for getting pokemon information using ASP.NET Core, Entity Framework Core and Sqlite." :
+                    "API REST para obtener información de pokemones. Usandp ASP.NET Core, Entity Framework COre y Slito."
+                  }
                 </p><br/>
                 <h4 className="pt-4 text-teal-600">#ASP.NET #C# #EFCore #Sqlite</h4>
               </div>
